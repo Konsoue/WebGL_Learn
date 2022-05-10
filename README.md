@@ -1,6 +1,7 @@
 # WebGL demo
 初识 WebGL，学习相关语法，基础图形学知识，做点 demo
 
+overview page: https://konsoue.github.io/WebGL_Learn/
 
 ## Slow_breath
 简介：颜色渐变
@@ -24,8 +25,9 @@
   - 计算机图形学（随机函数、噪声函数、分形布朗运动 FBM）
   - RGB 与 HSV 的转换
 
-## 456
-简介：
+## Texture_Radio
+简介：纹理比率
 
 涉及知识：
   - 纹理比率与画布比率
+  - 失真
