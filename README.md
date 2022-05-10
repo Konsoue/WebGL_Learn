@@ -1,5 +1,5 @@
 # WebGL demo
-初始 WebGL，学习相关语法，基础图形学知识，做点 demo
+初识 WebGL，学习相关语法，基础图形学知识，做点 demo
 
 
 ## Slow_breath
