@@ -47,23 +47,27 @@
     <article>
       <section>
         <iframe src="./1. Slow_breath/index.html" frameborder="0"></iframe>
-        <p><a href="/1. Slow_breath/index.html">进入页面</a></p>
+        <p><a href="/1. Slow_breath/">进入页面</a></p>
       </section>
       <section>
         <iframe src="./2. Kaleidoscopic/index.html" frameborder="0"></iframe>
-        <p><a href="/2. Kaleidoscopic/index.html">进入页面</a></p>
+        <p><a href="/2. Kaleidoscopic/">进入页面</a></p>
       </section>
       <section>
         <iframe src="./3. Pattern_Cloud/index.html" frameborder="0"></iframe>
-        <p><a href="/3. Pattern_Cloud/index.html">进入页面</a></p>
+        <p><a href="/3. Pattern_Cloud/">进入页面</a></p>
       </section>
       <section>
-
       </section>
     </article>
   </div>
   <script>
-
+    const aTags = document.querySelectorAll('a')
+    const prefix = window.location.href.replace('/index.html', '')
+    aTags.forEach(aTag => {
+      const href = aTag.getAttribute('href')
+      aTag.setAttribute('href', prefix + href)
+    })
   </script>
 </body>
 
