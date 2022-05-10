@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Sprat';
+  src: url('./font/Sprat.ttf');
+  src: url('./font/Sprat.otf');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: #222;
+  color: #fff;
+  margin: 0 auto;
+  font-family: Sprat, Arial, sans-serif;
+  line-height: 1.25;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 225px;
+  border: 1px solid #fff;
+  margin: 48px;
+}
+
+header {
+  flex: 1;
+  padding: 32px;
+}
+
+header :is(h1, h2) {
+  margin: 0;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 32px;
+  border-top: 1px solid #fff;
+}
+
+a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all .3s linear;
+}
+
+a:hover {
+  letter-spacing: 0.2em;
+}
+
+a:before {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  border: 1px solid #fff;
+}
+
+a:hover:before {
+  background-color: transparent;
+}
+
+
+canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vmax;
+  height: 100vmax;
+  pointer-events: none;
+  z-index: -1;
+}

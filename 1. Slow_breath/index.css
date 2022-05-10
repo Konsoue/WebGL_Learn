@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Sprat';
+  src: url('./font/Sprat.ttf');
+  src: url('./font/Sprat.otf');
+}
+
+@keyframes inhale {
+  0% {
+    font-weight: 100;
+    opacity: 0.5;
+  }
+
+  100% {
+    font-weight: 900;
+    opacity: 1;
+  }
+}
+
+@keyframes enhale {
+  0% {
+    font-weight: 900;
+    opacity: 1;
+  }
+
+  100% {
+    font-weight: 100;
+    opacity: 0.5;
+  }
+}
+
+@keyframes throb {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Sprat, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+
+  background-color: #222;
+  color: #fff;
+  margin: 0 auto;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9vmin;
+  text-align: center;
+}
+
+section div {
+  width: 5em;
+}
+
+section div.inhale {
+  animation: inhale 5s infinite alternate;
+}
+
+section div.enhale {
+  animation: enhale 5s infinite alternate;
+}
+
+
+canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 700px;
+  width: 700px;
+  max-width: 90vmin;
+  max-height: 90vmin;
+  animation: throb 5s infinite alternate;
+}
