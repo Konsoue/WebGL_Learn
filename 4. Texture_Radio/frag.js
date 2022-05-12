@@ -41,7 +41,7 @@ void main() {
   // 设置一个安全区域, 避免边缘失真问题
   coords = mix(vec2(0.05, 0.05), vec2(0.95, 0.95), coords);
 
-  // 添加失真效果
+  // 添加扭曲效果
   vec2 distortion = 0.1 * vec2(
      sin(u_time * 0.5 + x * 0.8 + y * 0.9 + mouse.x * 2.0 + mouse.y * 0.5),
      cos(u_time * 0.1 + x * 1.1 + y * 1.5 + mouse.x * 0.5 + mouse.y)

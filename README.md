@@ -30,4 +30,12 @@ overview page: https://konsoue.github.io/WebGL_Learn/
 
 涉及知识：
   - 纹理比率与画布比率
-  - 失真
+  - 扭曲原理：每个像素，偏移轨迹不一致
+
+## Color_Shift
+简介：色彩偏移
+
+涉及知识
+  - RGB
+  - 扭曲原理
+  - 边缘处理
